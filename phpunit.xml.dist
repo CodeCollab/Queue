@@ -25,7 +25,8 @@
         <whitelist>
             <directory suffix=".php">src/</directory>
             <exclude>
-                <file>src/Task/InvalidaPropertyException.php</file>
+                <file>src/Task/InvalidDataException.php</file>
+                <file>src/Task/InvalidPropertyException.php</file>
             </exclude>
         </whitelist>
     </filter>
