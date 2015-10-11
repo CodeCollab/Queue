@@ -221,18 +221,4 @@ class PostgresTest extends \PHPUnit_Framework_TestCase// implements Task
 
         (new Postgres($this->pdoMock, $this->taskData))->delete();
     }
-
-    /**
-     * Deletes the task
-     */
-    public function delete()
-    {
-        $query = 'DELETE FROM queue';
-        $query.= ' WHERE id = :id';
-
-        $stmt = $this->dbConnection->prepare($query);
-        $stmt->execute([
-            'id' => $this->id,
-        ]);
-    }
 }
