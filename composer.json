@@ -1,0 +1,28 @@
+{
+    "name": "codecollab/queue",
+    "description": "Queue package of the CodeCollab project",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": ["codecollab", "queue", "worker", "scheduling"],
+    "homepage": "https://github.com/CodeCollab/Queue",
+    "license": "See the LICENSE file",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"CodeCollab\\Queue\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"CodeCollabTest\\Mock\\Queue\\": "test/Mock/"}
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5"
+    }
+}
