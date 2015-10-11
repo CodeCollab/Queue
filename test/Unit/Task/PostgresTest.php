@@ -4,7 +4,7 @@ namespace CodeCollabTest\Unit\Queue\Task;
 
 use CodeCollab\Queue\Task\Postgres;
 
-class PostgresTest extends \PHPUnit_Framework_TestCase// implements Task
+class PostgresTest extends \PHPUnit_Framework_TestCase
 {
     protected $pdoMock;
 
